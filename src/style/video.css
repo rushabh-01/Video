@@ -1,0 +1,48 @@
+.video-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  /* background-color: black; */
+}
+
+
+.thumbnail-container {
+  display: flex;
+  padding: 10px 0;
+  width: 600px; /* Set a fixed width for the container */
+  overflow-x: scroll;
+  margin: 70px 0 0;
+  scroll-behavior: smooth;
+}
+
+.thumbnail-container-mobile{
+  display: block;
+  margin:20px 20px 20px 40px;
+}
+
+
+
+.thumbnail {
+  min-width: 50px !important;
+  max-width: 50px !important;
+  height: 50px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+
+@media(max-width:768px){
+  .video-container{
+    width: auto;
+  }
+  video{
+    width: 350px !important;
+  }
+  .thumbnail{
+    margin: 10px;
+  }
+}
